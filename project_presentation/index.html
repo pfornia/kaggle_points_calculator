@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Products Pitch Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Products Pitch Presentation">
+  <meta name="author" content="Paul Fornia">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data Products Pitch Presentation</h1>
+    <h2>Kaggle Points Calculator App</h2>
+    <p>Paul Fornia<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Kaggle</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Kaggle.com is a platform for data science and machine learning competitions</p>
+
+<p>Individuals and teams compete for cash prizes (ranging from $250 to $100,000+), job offers, resume boosters, and bragging rights.</p>
+
+<p>The Global &quot;User Rankings&quot; leaderboard is based on all <strong>points</strong> earned over a competitor&#39;s career.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Rankings and Points</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Prior to 2015, Kaggle users were awarded points on the following basis per competition:</p>
+
+<p>\[ \left[\frac{100000}{N_{teammates}}\right] \left[Rank^{-0.75}\right] \left[log_{10} (N_{teams})\right] \left[\frac{2 \ years - time}{2 \ years}\right] \]</p>
+
+<p>In recent months, they changed their algorimth to the following:</p>
+
+<p>\[ \left[\frac{100000}{\sqrt{N_{teammates}}}\right] \left[Rank^{-0.75}\right] \left[log_{10}(1 + log_{10}(N_{teams}))\right] \left[e^{-t/500}\right] \]</p>
+
+<p>To learn more about these changes, visit <a href="http://blog.kaggle.com/2015/05/13/improved-kaggle-rankings/">http://blog.kaggle.com/2015/05/13/improved-kaggle-rankings/</a></p>
+
+<p>While rankings and points are transparent, it may be difficult for someone to quickly and intuitively understand the implications of these equations. The &quot;Kaggle Points Calculator&quot; can help a user better understand these equations. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Interactive tool</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The &quot;Kaggle Competition Point Calculator&quot;, found at <a href="https://paulfornia.shinyapps.io/Data_Products_Project_v2">https://paulfornia.shinyapps.io/Data_Products_Project_v2</a>, allows a user to see a plot of points awarded vs rankings for a single contest. The tool allows the user to select a custom level for:</p>
+
+<ol>
+<li>Number of members of your team</li>
+<li>Number of teams in a contest</li>
+<li>Old vs New point algorithm</li>
+</ol>
+
+<p>Additionally, the tool allows the user to set a goal for points, and see exactly what rank they must achieve to obtain that level of points.</p>
+
+<p>Finally, the tool shows how many points will be left after one and two years, after the decay function.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Example Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This tool could be used in a variety of ways. For example, I used this tool to come to the conclusion that, under the new point system, I should be focussing on smaller contests. To obtain 1500 points from a 10,000 person contest, I need to place 167th, or about the top 1.7%. In a contest of 80 people, I can get the same number of points by coming in dead last (shown below).</p>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Kaggle'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Rankings and Points'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Interactive tool'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example Use'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
